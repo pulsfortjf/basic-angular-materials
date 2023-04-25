@@ -1,0 +1,47 @@
+<mat-toolbar color="primary">
+    <button mat-raised-button id="Home" (click)="onButtonClick('Home')">
+        Home
+    </button>
+    <button mat-raised-button id="Topic1" (click)="onButtonClick('Lists')">
+        Lists
+    </button>
+    <button mat-raised-button id="Topic2" (click)="onButtonClick('Dictionaries')">
+        Dictionaries
+    </button>
+    <button mat-raised-button id="Topic3" (click)="onButtonClick('Sets')">
+        Sets
+    </button>
+    <button mat-raised-button id="Topic4" (click)="onButtonClick('Tuples')">
+        Tuples
+    </button>
+</mat-toolbar>
+
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>Python Data Types</mat-card-title>
+        <mat-card-subtitle>{{ cardSubtitle }}</mat-card-subtitle>
+    </mat-card-header>
+
+    <mat-card-content>{{pageContent}}</mat-card-content>
+
+    <mat-card-actions>
+        <mat-list>
+            <mat-form-field>
+                <input id="formInput" matInput type="text" placeholder="Leave a comment" [(ngModel)]="inputString">
+                <button mat-button matSuffix id="clear-button" (click)="clearButtonClick()">Clear</button>
+            </mat-form-field>
+            <div id="references">
+                <h2 id="ref-head">References</h2>
+                <p id="refs">
+                    <a href="https://www.w3schools.com/python/python_lists.asp">https://www.w3schools.com/python/python_lists.asp</a>
+                    <br>
+                    <a href="https://www.w3schools.com/python/python_dictionaries.asp">https://www.w3schools.com/python/python_dictionaries.asp</a>
+                    <br>
+                    <a href="https://www.w3schools.com/python/python_sets.asp">https://www.w3schools.com/python/python_sets.asp</a>
+                    <br>
+                    <a href="https://www.w3schools.com/python/python_tuples.asp">https://www.w3schools.com/python/python_tuples.asp</a>
+                </p>
+            </div>
+        </mat-list>
+    </mat-card-actions>
+</mat-card>

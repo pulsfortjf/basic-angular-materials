@@ -1,0 +1,111 @@
+mat-toolbar {
+    height: 64px;
+    padding: 0 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: bisque;
+    color: rgb(50, 50, 50);
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+mat-toolbar button {
+    font-size: 24px;
+    color: floralwhite;
+    background-color: darkslategrey;
+}
+
+mat-toolbar #Topic1 {
+    background-color: rgb(57, 71, 31);
+}
+
+mat-toolbar #Topic2 {
+    background-color: rgb(97, 117, 66);
+}
+
+mat-toolbar #Topic3 {
+    background-color: rgb(124, 145, 89);
+}
+
+mat-toolbar #Topic4 {
+    background-color: rgb(175, 194, 142);
+}
+  
+mat-toolbar span {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+mat-card {
+    background-color: burlywood;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+mat-card-header {
+    font-size: 24px;
+}
+
+mat-card-title {
+    font-size: 24px;
+    color:darkslateblue;
+}
+
+mat-card-subtitle {
+    font-size: 20px;
+    color:slateblue;
+    padding:16px;
+}
+
+mat-card-content {
+    white-space: break-spaces;
+    margin-left: 16px;
+}
+
+mat-form-field {
+    width: 400px;
+    height:56px;
+    margin-top: 16px;
+    margin-left: 16px;
+}
+
+#formInput {
+    margin-top: 8px;
+}
+
+#clear-button {
+    padding: 16px;
+    width: 50px;
+}
+
+#clear-button:hover {
+    background-color: rgb(241, 207, 162);
+}
+
+mat-list {
+    padding: 0 4px;
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+}
+
+mat-card-actions #card-button-1 {
+    background-color: rgb(65, 82, 36);
+    color:floralwhite
+}
+
+mat-card-actions #card-button-2 {
+    background-color:rgb(179, 211, 179)
+}
+
+#references {
+    display: block;
+}
+
+#ref-head {
+    font-size: 20px;
+    color:maroon
+}
+
+#refs {
+    padding-left: 16px;
+}
