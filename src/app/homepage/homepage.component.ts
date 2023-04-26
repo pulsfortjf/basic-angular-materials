@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 
+import { HighlighterPipe } from '../highlighter.pipe';
+
 @Component({
   selector: 'app-homepage',
   templateUrl: './homepage.component.html',
@@ -9,6 +11,7 @@ export class HomepageComponent {
   title = 'My App';
   cardTitle = 'Home';
   cardSubtitle = ''
+  searchString: string = '';
 
   pageContent: string = 'Hello! Welcome to my page about Python data types! Click any of the buttons in the toolbar to learn more about each topic!';
   // Example function to handle toolbar button click
@@ -57,6 +60,11 @@ export class HomepageComponent {
   clearButtonClick(): void {
     this.inputString = '';
     console.log('inputString: ', this.inputString)
+  }
+
+  searchButtonClick(): void {
+    console.log('searchString: ', this.searchString)
+    this.searchString = '';
   }
 
 }

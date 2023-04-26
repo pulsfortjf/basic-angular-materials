@@ -68,16 +68,24 @@ mat-form-field {
     margin-left: 16px;
 }
 
-#formInput {
+#searchInput {
     margin-top: 8px;
 }
 
-#clear-button {
+::ng-deep .highlighted-text{
+    background-color:rgb(173, 194, 231)
+}
+
+#searchForm {
+    width: 400px;
+}
+
+#searchButton {
     padding: 16px;
     width: 50px;
 }
 
-#clear-button:hover {
+#searchButton:hover {
     background-color: rgb(241, 207, 162);
 }
 

@@ -22,13 +22,14 @@
         <mat-card-subtitle>{{ cardSubtitle }}</mat-card-subtitle>
     </mat-card-header>
 
-    <mat-card-content>{{pageContent}}</mat-card-content>
+    <mat-card-content>
+        <div class="text-contaniner" [innerHtml]="pageContent | highlighter:searchString"></div>
+    </mat-card-content>
 
     <mat-card-actions>
         <mat-list>
-            <mat-form-field>
-                <input id="formInput" matInput type="text" placeholder="Leave a comment" [(ngModel)]="inputString">
-                <button mat-button matSuffix id="clear-button" (click)="clearButtonClick()">Clear</button>
+            <mat-form-field id="searchForm">
+                <input id="searchInput" matInput type="search" placeholder="Search" [(ngModel)]="searchString">
             </mat-form-field>
             <div id="references">
                 <h2 id="ref-head">References</h2>

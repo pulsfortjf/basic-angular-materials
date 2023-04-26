@@ -12,11 +12,13 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import { HomepageComponent } from './homepage/homepage.component';
+import { HighlighterPipe } from './highlighter.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomepageComponent
+    HomepageComponent,
+    HighlighterPipe,
   ],
   imports: [
     BrowserModule,
