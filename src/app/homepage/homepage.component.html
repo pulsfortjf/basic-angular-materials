@@ -1,17 +1,17 @@
 <mat-toolbar color="primary">
-    <button mat-raised-button id="Home" (click)="onButtonClick('Home')">
+    <button mat-button id="Home" (click)="onButtonClick('Home')">
         Home
     </button>
-    <button mat-raised-button id="Topic1" (click)="onButtonClick('Lists')">
+    <button mat-button id="Topic1" (click)="onButtonClick('Lists')">
         Lists
     </button>
-    <button mat-raised-button id="Topic2" (click)="onButtonClick('Dictionaries')">
+    <button mat-button id="Topic2" (click)="onButtonClick('Dictionaries')">
         Dictionaries
     </button>
-    <button mat-raised-button id="Topic3" (click)="onButtonClick('Sets')">
+    <button mat-button id="Topic3" (click)="onButtonClick('Sets')">
         Sets
     </button>
-    <button mat-raised-button id="Topic4" (click)="onButtonClick('Tuples')">
+    <button mat-button id="Topic4" (click)="onButtonClick('Tuples')">
         Tuples
     </button>
 </mat-toolbar>
@@ -33,7 +33,7 @@
             </mat-form-field>
             <div id="references">
                 <h2 id="ref-head">References</h2>
-                <p id="refs">
+                <nav id="refs">
                     <a href="https://www.w3schools.com/python/python_lists.asp">https://www.w3schools.com/python/python_lists.asp</a>
                     <br>
                     <a href="https://www.w3schools.com/python/python_dictionaries.asp">https://www.w3schools.com/python/python_dictionaries.asp</a>
@@ -41,7 +41,7 @@
                     <a href="https://www.w3schools.com/python/python_sets.asp">https://www.w3schools.com/python/python_sets.asp</a>
                     <br>
                     <a href="https://www.w3schools.com/python/python_tuples.asp">https://www.w3schools.com/python/python_tuples.asp</a>
-                </p>
+                </nav>
             </div>
         </mat-list>
     </mat-card-actions>

@@ -1,8 +1,7 @@
 mat-toolbar {
     height: 64px;
-    padding: 0 16px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     background-color: bisque;
     color: rgb(50, 50, 50);
@@ -11,29 +10,14 @@ mat-toolbar {
   
 mat-toolbar button {
     font-size: 24px;
-    color: floralwhite;
-    background-color: darkslategrey;
+    margin-left: -16px;
+    height: 64px;
+    width: 192px;
+    color:rgb(50, 50, 50)
 }
 
-mat-toolbar #Topic1 {
-    background-color: rgb(57, 71, 31);
-}
-
-mat-toolbar #Topic2 {
-    background-color: rgb(97, 117, 66);
-}
-
-mat-toolbar #Topic3 {
-    background-color: rgb(124, 145, 89);
-}
-
-mat-toolbar #Topic4 {
-    background-color: rgb(175, 194, 142);
-}
-  
-mat-toolbar span {
-    font-size: 20px;
-    font-weight: bold;
+mat-toolbar button:hover {
+    background-color: rgb(255, 220, 177);
 }
 
 mat-card {
@@ -54,6 +38,7 @@ mat-card-subtitle {
     font-size: 20px;
     color:slateblue;
     padding:16px;
+    margin-top: 16px;
 }
 
 mat-card-content {
